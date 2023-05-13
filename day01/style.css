@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.parent {
+  background-color: #23424a;
+  padding: 50px;
+  /*  By default everything is responsive (100% of the parent). Set values can create issues */
+  /* width: 900px; */
+  margin: 0 auto;
+
+  /* The div.parent width is 80% of the body */
+  width: 80%;
+
+  /* overflow: hidden; */
+}
+
+.child {
+  background-color: #38cfd9;
+  /* This height is used just to see whats going on */
+  /* width: 750px; */
+
+  /* The div.child width is 50% of the div.parent */
+  width: 50%;
+  height: 250px;
+}
