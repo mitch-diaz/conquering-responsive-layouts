@@ -28,10 +28,11 @@ body {
   width: 80%;
   margin: 0 auto;
 
-  padding: 2em;
-  height: 100%;
+  padding: 3em;
+  /* .container doesn't need the height because the default is responsive */
+  /* height: 100%; */
 }
 
 .intro-content {
-  width: 40%;
+  width: 50%;
 }
