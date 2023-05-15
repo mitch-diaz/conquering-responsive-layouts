@@ -1,0 +1,55 @@
+/* INSTRUCTIONS
+ *
+ * 1) Keep the text inside .intro-content
+ *    in the same place, but have the background
+ *    extend from one side of the viewport
+ *    to the other, no matter how wide or narrow
+ *    the browser is.
+ *
+ * 2) Limit the maximum width of the text in the
+ *    bottom area.
+ *
+ * You may modify the HTML if needed
+ * (you probably should for this challenge)
+ *
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background: #23424a;
+  color: white;
+  padding: 50px 0;
+}
+
+.intro-content {
+  width: 80%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.more-content {
+  width: 80%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* 
+Margin - https://developer.mozilla.org/en-US/docs/Web/CSS/margin
+
+Horizontal centering:
+To center something horizontally in modern browsers, you can use display: flex; justify-content: center;.
+
+However, in older browsers like IE8-9 that do not support Flexible Box Layout, these are not available. In order to center an element inside its parent, use margin: 0 auto;.
+
+With `auto` the browser selects a suitable margin to use. For example, in certain cases this value can be used to center an element.
+*/
