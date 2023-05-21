@@ -14,27 +14,34 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* good practice to ensure that all images stay within their html element */
+img {
+  max-width: 100%;
+}
+
 h1 {
   font-size: 3rem;
+  margin-top: 0;
 }
 
 .hero {
   background-color: #23424A;
   color: #ffffff;
-  padding: 3em;
+  padding: 4em;
 }
 
 .container {
-  width: 90%;
+  width: 60%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3em 0 3em 0;
+  /* padding: 3em 0 3em 0; */
 }
 
 .row {
   display: flex;
-  gap: 40px;
-  padding: 3em 0 3em 0;
+  justify-content: space-between;
+  /* gap: 40px; */
+  /* padding: 3em 0 3em 0; */
 }
 
 .col {
@@ -50,16 +57,22 @@ h1 {
   line-height: 1.5;
 }
 
+.hero__text {
+  width: 60%;
+  max-width: 1100px;
+  color: #fff;
+  margin: 0;
+}
+
 .hero p {
   line-height: 1.5em;
   margin-bottom: 3em;
 }
 
-.hero__text {
-  width: 100%;
-  max-width: 800px;
-  color: #fff;
-  margin: 3em 0 3em 0;
+.hero__img {
+  /* width: 50%; */
+  align-self: flex-start;
+  border: 4px solid red;
 }
 
 .btn {
@@ -78,29 +91,3 @@ h1 {
   opacity: .75;
 }
 
-/* =============================================== */
-
-.hero2 {
-  background-color: #136C72;
-  color: #ffffff;
-  padding: 3em;
-}
-
-.row-container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.purple-h2 {
-  color: #87629A;
-  font-size: 2.25rem;
-}
-
-.white-h2 {
-  color: #fff;
-  font-size: 2.25rem;
-}
