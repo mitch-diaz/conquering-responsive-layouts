@@ -5,50 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox Layout Challenge 4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="header__col">
-            <p class="hero__p--title">Lorem ipsum sit</p>
-            <h1 class="hero__h1--title">Responsive layouts don’t have to be a struggle</h1>
+    <section class="intro">
+        <div class="container">
+            <p class="intro__text">Lorem ipsum sit</p>
+            <h1 class="intro__title">Responsive layouts don’t<br/> have to be a struggle</h1>
         </div>
-    </header>
+    </section>
 
-    <main class="container container__padding">
-        <div class="col">
-            <h2>Quality Designs</h2>
+    <section class="section-two">
+        <div class="container">
+            <h2 class="section-title section-title--dark">Quality Designs</h2>
             <div class="row">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui vivamus arcu felis bibendum ut tristique. Arcu dui vivamus arcu felis. Sociis natoque penatibus et magnis dis.</p>
+                <div class="col">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui vivamus arcu felis bibendum ut tristique. Arcu dui vivamus arcu felis. Sociis natoque penatibus et magnis dis.</p>
+                </div>
+                <div class="col">
+                    <p>Felis donec et odio pellentesque diam volutpat. Aliquam purus sit amet luctus venenatis. Turpis in eu mi bibendum neque egestas congue quisque egestas. Pellentesque sit amet porttitor eget dolor morbi non.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-three">
+        <div class="container row">
+            <div class="col">
+                <h2 class="section-title">Made custom for you</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <div class="col">
+                <img src="../images/image-01.jpg" alt="a sunset over a mountain range">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-four">
+        <div class="container row">
+            <div class="col">
+                <img src="../images/image-02.jpg" alt="a sunset over a mountain range with tree branches in the foreground">
+            </div>
+            <div class="col">
+                <h2 class="section-title">Created with care</h2>
                 <p>Felis donec et odio pellentesque diam volutpat. Aliquam purus sit amet luctus venenatis. Turpis in eu mi bibendum neque egestas congue quisque egestas. Pellentesque sit amet porttitor eget dolor morbi non.</p>
             </div>
         </div>
-    </main>
-
-    <div class="background__black">
-        <div class="container">
-            <div class="row">
-                <div>
-                    <h2 class="text__content">Made custom for you</h2>
-                    <p class="text__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                </div>
-                <img src="../images/image-01.jpg" alt="">
-            </div>
-        </div>
-    </div>
-
-    <div class="background__brown">
-        <div class="container">
-            <div class="row">
-                <img src="../images/image-02.jpg" alt="">
-                <div>
-                    <h2 class="text__content">Created with care</h2>
-                    <p class="text__content">Felis donec et odio pellentesque diam volutpat. Aliquam purus sit amet luctus venenatis. Turpis in eu mi bibendum neque egestas congue quisque egestas. Pellentesque sit amet porttitor eget dolor morbi non.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
+    </section>
 </body>
 </html>
