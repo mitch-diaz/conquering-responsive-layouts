@@ -29,15 +29,14 @@ h1, h2, h3, h4, h5 {
 /* ======================= */
 
 
-
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
-/* .row {} */
-/* .col {} */
 
 /* ======= Header / Nav ======== */
 
@@ -46,10 +45,6 @@ header {
     width: 100%;
     padding: 1em 0;
 }
-
-/* .fa-solid {
-    font-size: 24px;
-} */
 
 .logo {
     margin: 18px;
@@ -74,7 +69,6 @@ header {
 
 
 .nav-toggle {
-    /* font-size: 24px; */
     cursor: pointer;
     border: 0;
     width: 3em;
@@ -174,7 +168,7 @@ header {
 .section__one--content-parent {
     width: 100%;
     max-width: 1200px;
-    padding: 4em 1em;
+    padding: 6em 1em;
     margin: 0 auto;
 }
 
@@ -362,12 +356,61 @@ ul .li-link {
 
 /* MEDIA QUERIES ======================= */
 /* Navigation */
-@media (min-width: 1000px) {
-    
+@media (min-width: 700px) {
+    .container {
+        flex-direction: row;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    .nav {
+        visibility: visible;
+        height: fit-content;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .nav__list {
+        flex-direction: row;
+        margin-bottom: 0;
+        width: fit-content;
+    }
+
+    .nav__list + .nav__list {
+        margin: 40px;
+    }
+
+    .nav__item {
+        margin-bottom: 0;
+    }
+
+    .nav__item a {
+        margin-bottom: 0;
+    }
+
+    .nav__item a:hover {
+        opacity: .55;
+    }
+
+    .nav__item + .nav__item {
+        margin-left: 30px;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
 }
 
 /* Section One */
 @media (min-width: 1000px) {
+    .logo {
+        padding-left: 50px;
+    }
+
     .section__one--content-parent {
         display: flex;
         justify-content: center;
@@ -376,7 +419,8 @@ ul .li-link {
 
     .section__one--title-wrap {
         max-width: 400px;
-        margin: 0 auto;
+        margin: 0;
+        padding-left: 50px;
     }
 
     .section__one--text-wrap {
